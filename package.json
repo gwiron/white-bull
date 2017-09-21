@@ -1,0 +1,11 @@
+{
+  "name": "white-bull",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dist": "babel lib/ --modules umd --out-dir dist"
+  },
+  "author": "",
+  "license": "ISC"
+}
