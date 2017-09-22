@@ -1,6 +1,14 @@
 
 import React from 'react'
 
+/**
+  * @param {React.Component} Component
+  * @param {Module} module1
+  * @param {Module} module2
+  * @param {Module} module3
+  * @param {Module} module...
+  * @return {React.Component}
+  */
 export function connection(Component /*, module1, module2, module3**/){
 
   let modules = Array.from(arguments).slice(1);

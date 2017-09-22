@@ -9,9 +9,23 @@ import AsyncEventsEmitter from "async-events-emitter";
 import {addModule, removeModule} from './dispatch'
 
 /**
-  * new Module(namespace)
-  * @namespace string
+  * interFace Module
+  * @use
+
+    class A extends Module{
+      constructor(namespace){
+        super(namespace)
+      }
+
+      //...any function
+    }
+
+    //dispatch("namespace.anyFucntion");
+
+  * @param {string} namespace //被绑定到props中所使用的名字
+  *
   */
+
 export class Module extends AsyncEventsEmitter{
   constructor(namespace){
     super()

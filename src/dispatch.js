@@ -2,11 +2,13 @@
 let dispatchScope = {};
 
 /**
-  * @actionName string
-  * @arg1
-  * @arg2
-  * @arg3
-  * @arg....
+  * @param {string} actionName  //scope.fucntionName
+  * @param {any} arg1
+  * @param {any} arg2
+  * @param {any} arg3
+  * @param {any} arg...
+  * @return {Boolean}
+  * @throw params error
   */
 
 function dispatch(actionName /*arg1, arg2, arg3*/){
