@@ -4,7 +4,8 @@
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
-    "dist": "babel lib/ --modules umd --out-dir dist"
+    "dist": "babel lib/ --modules umd --out-dir dist",
+    "test": "mocha ./test/index.test.js"
   },
   "author": "",
   "license": "ISC"

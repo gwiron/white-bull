@@ -1,11 +1,13 @@
 ## white-bull
 
+[![Build Status](https://travis-ci.org/jun-lu/white-bull.svg?branch=master)](https://travis-ci.org/jun-lu/white-bull)
+[![npm version](https://badge.fury.io/js/white-bull.svg)](https://badge.fury.io/js/white-bull) [![npm downloads](https://img.shields.io/npm/dm/white-bull.svg?style=flat-square)](https://www.npmjs.com/package/white-bull)
+
 React view 与 data 的连接器。
 
 ## use
 
 ````javascript
-
 
 import React from 'react'
 import {render} from 'react-dom'
