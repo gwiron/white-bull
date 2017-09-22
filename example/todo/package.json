@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "async-events-emitter": "^1.0.5",
-    "react-router": "^3.0.2"
+    "react-router": "^3.0.2",
+    "white-bull": "^1.0.0"
   }
 }

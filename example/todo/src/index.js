@@ -1,7 +1,8 @@
 
 import React from 'react'
 import {render} from 'react-dom'
-import {connection, dispatch, Module} from '../white-bull/index';
+// import {connection, dispatch, Module} from '../node_modules/white-bull/dist/index';
+import {connection, dispatch, Module} from 'white-bull';
 
 
 class TodoItem extends React.Component{

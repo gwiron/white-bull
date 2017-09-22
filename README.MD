@@ -32,10 +32,12 @@ class HelloModule extends Module {
   }
 }
 
-//把 HelloModule 中的 state 绑定到 User 的 props.say 中
+//把 HelloModule 中的 state 绑定到 Hello 的 props.say 中
 let App = connection(Hello, new HelloModule("say"));
 
 render(<App/>, document.getElementById("#root"));
+
+//欢迎查看 example todo ./example/todo/src/index.js
 
 ````
 
