@@ -1,6 +1,6 @@
 {
   "name": "white-bull",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React最佳实践",
   "main": "./dist/index.js",
   "scripts": {
@@ -19,7 +19,8 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-1": "^6.16.0",
-    "babel-preset-stage-3": "^6.24.1"
+    "babel-preset-stage-3": "^6.24.1",
+    "mocha":"*"
   },
   "dependencies": {
     "events":"*",
