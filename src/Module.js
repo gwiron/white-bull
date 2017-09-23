@@ -3,9 +3,9 @@
 //我们需要view之间能通信
 //我们需要view能触发module更新
 //我们还喜欢有其他方式触发module更新，比如url变化
-//module可能是持久化的，也可能是一次性的
+//module可能是持久化的，也可能需要多处实例化
 
-import AsyncEventsEmitter from "async-events-emitter";
+import events from 'events';
 import {addModule, removeModule} from './dispatch'
 
 /**
@@ -26,7 +26,7 @@ import {addModule, removeModule} from './dispatch'
   *
   */
 
-export class Module extends AsyncEventsEmitter{
+export class Module extends events.EventEmitter{
   constructor(namespace){
     super()
 
@@ -38,7 +38,7 @@ export class Module extends AsyncEventsEmitter{
 
   setState(state){
     Object.assign(this.state, state);
-    this.emit(this.COMPLETE, this.state, this.namespace);
+    this.emit("complete", this.state, this.namespace);
   }
 
 }

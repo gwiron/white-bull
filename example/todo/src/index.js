@@ -2,7 +2,7 @@
 import React from 'react'
 import {render} from 'react-dom'
 // import {connection, dispatch, Module} from '../node_modules/white-bull/dist/index';
-import {connection, dispatch, Module} from 'white-bull';
+import {connection, dispatch, Module} from '../white-bull/index';
 
 //https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=%E4%B8%AD%E5%9B%BD
 class TodoItem extends React.Component{

@@ -21,7 +21,7 @@ export function connection(Component /*, module1, module2, module3**/){
       for(let i=0; i<modules.length; i++){
         let module = modules[i];
         this.state[module.namespace] = module.state;
-        module.subscribe((state, namespace)=>{
+        module.on("complete",(state, namespace)=>{
           this.setState({
             [namespace]:state
           })

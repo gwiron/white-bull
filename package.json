@@ -4,7 +4,7 @@
   "description": "React最佳实践",
   "main": "./dist/index.js",
   "scripts": {
-    "dist": "babel src/ --modules umd --out-dir dist",
+    "dist": "babel src/ --modules umd --out-dir dist && cp -r ./dist/ ./example/todo/white-bull/",
     "test": "mocha ./test/index.test.js"
   },
   "devDependencies": {
@@ -22,7 +22,8 @@
     "babel-preset-stage-3": "^6.24.1"
   },
   "dependencies": {
-    "async-events-emitter": "^1.0.5"
+    "events":"*",
+    "fsevents":"*"
   },
   "bugs": {
     "url": "https://github.com/jun-lu/white-bull/issues"
